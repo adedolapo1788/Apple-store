@@ -1,0 +1,163 @@
+*{
+	box-sizing: border-box;
+}
+/* body*/
+
+body {
+	line-height: 1.5;
+	color:#fff;
+	font-family: cursive;
+}
+
+/****** Header portion *****/
+.name{
+	margin:0;
+}
+
+a {
+	text-decoration: none;
+	color: #20b2aa;
+}
+a:hover{
+	color:palevioletred;
+	font-size: bold;
+	text-decoration: line-through;
+}
+
+.main-header {
+	background: #40e0d0;
+	padding:1em 0;
+}
+
+h1{
+	margin-top: 0;
+	font-size: 23px;
+}
+
+
+h1,
+.Store{
+
+	color: #20b2aa;
+	background: #fff;
+}
+.Store{
+
+	font-size: 20px;
+	  margin-bottom:0.33em;
+}
+.name{
+	 margin-bottom:-0.42em;
+}
+
+
+.main-nav li {
+	text-transform: uppercase;
+	background: #fff;
+	margin-top:0.33em;
+
+}
+
+/****** Body  *****/
+
+.content{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#Red-del {
+	width: 35%;
+}
+
+#royal,
+#fujiApple,
+#grannyApple {
+	width: 45%;
+}
+
+li{
+	list-style: none;
+	color: #696969;
+}
+
+.space {
+	border-bottom-style: solid;
+	border-bottom-color:#dcdcdc;
+	border-bottom-width: 1.5px;
+}
+
+
+
+
+
+/****** footer portion *****/
+footer{
+	color: #808080;
+	background: #e0ffff;
+	padding:2em 0;
+	text-align: center;
+}
+
+/****** MEDIA QUERIES*****/
+@media(min-width:769px){
+.content{
+	width: 89%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+	.wrap{
+		min-height:calc(100vh-144px);
+	}
+
+
+	.name{
+		width:41%;
+		margin-right: 40px;
+
+	}
+
+	.Store{
+		width: 11%;
+		margin-right: 780px;
+	}
+
+	.Store,
+	.main-nav,
+	.main-nav li{
+		display: inline-block;
+	}
+
+	.Top-text{
+		text-align: center;
+		margin-bottom: 2px;
+	}
+
+	#Red-del
+	{
+		width:200px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 100px;
+		margin-bottom: 25px;
+		padding: 10px;
+
+	}
+	#royal,
+	#fujiApple,
+	#grannyApple
+	{
+		width: 250px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 100px;
+		margin-bottom: 25px;
+		padding: 10px;
+	}
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear:both;
+
+	}
+}
