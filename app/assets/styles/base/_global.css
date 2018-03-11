@@ -1,6 +1,11 @@
 *{
+	margin-top: 0;
 	box-sizing: border-box;
-	line-height: 1.233;
+	line-height: 1.5;
 	font-family: 'Roboto',sans-serif;
 	color: #333;
+}
+
+.wrap{
+	margin-top: -30px;
 }
