@@ -1,10 +1,11 @@
 .main-header{
+	
 	background:linear-gradient($mainBlue,$mainOrange,$mainBlue);
 	height:600px;
-	margin-bottom: 45px;
-
+	margin-bottom: 50px;
 	@mixin atSmall{
-		height:600px;
+		position: relative;
+		height:450px;
 	}
 
 	&__head-text {
@@ -17,7 +18,7 @@
 
 		@mixin atSmall{
 			font-size: 2.78rem;
-			padding-top: 2rem;
+			padding-top: 4rem;
 		}
 	}
 
@@ -47,15 +48,5 @@
 
 
 
-
-a {
-	text-decoration: none;
-	color: #20b2aa;
-}
-a:hover{
-	color:palevioletred;
-	font-size: bold;
-	text-decoration: line-through;
-}
 
 
