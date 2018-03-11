@@ -1,0 +1,51 @@
+.name{
+	margin:0;
+
+	@mixin atSmall{
+		width:41%;
+		margin-right: 40px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: #20b2aa;
+}
+a:hover{
+	color:palevioletred;
+	font-size: bold;
+	text-decoration: line-through;
+}
+
+.main-header {
+	background: $mainBlue;
+	padding:1em 0;
+}
+
+h1{
+	margin-top: 0;
+	font-size: 30px;
+}
+
+
+h1,
+.Store{
+	color: #20b2aa;
+	background: #fff;
+}
+.Store{
+
+	font-size: 20px;
+	  margin-bottom:0.33em;
+}
+.name{
+	 margin-bottom:-0.42em;
+}
+
+
+.main-nav li {
+	text-transform: uppercase;
+	background: #fff;
+	margin-top:0.33em;
+
+}

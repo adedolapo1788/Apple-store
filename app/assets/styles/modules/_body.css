@@ -1,0 +1,65 @@
+.content{
+	margin-right: 1rem;
+	margin-left: 0;
+
+	@mixin atSmall{
+		padding-left: 1em;
+	    padding-right: 1em;
+	    width: 89%;
+	    max-width: 1150px;
+	    margin: 0 auto;
+	}
+}
+
+#Red-del {
+	width: 35%;
+
+	@mixin atSmall{
+		width:200px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 100px;
+		margin-bottom: 25px;
+		padding: 10px;
+
+	
+	}
+}
+
+#royal,
+#fujiApple,
+#grannyApple {
+	width: 45%;
+
+	@mixin atSmall{
+		width: 250px;
+		float: left;
+		margin-top: 5px;
+		margin-right: 100px;
+		margin-bottom: 25px;
+		padding: 10px;
+	}
+}
+
+li{
+	list-style: none;
+	color: #696969;
+}
+
+.space {
+	border-bottom-style: solid;
+	border-bottom-color:#dcdcdc;
+	border-bottom-width: 1.5px;
+}
+
+.Top-text{
+	text-align: center;
+	font-size: 1.5rem;
+	@mixin atSmall{
+		text-align: center;
+		margin-bottom: 2px;
+		font-size: 1.85rem;
+		font-weight: 500;
+	}
+}
+

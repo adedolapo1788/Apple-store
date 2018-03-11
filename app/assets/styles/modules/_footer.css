@@ -1,0 +1,38 @@
+
+/****** footer portion *****/
+footer{
+	background: $mainBlue;
+	padding:2em 0;
+    text-align: center;
+}
+
+.footer-text{
+	color: #fff;
+	max-width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+    @mixin atSmall{
+    	max-width: 100%;
+    }
+}
+
+/****** MEDIA QUERIES*****/
+@media(min-width:769px){
+
+	.wrap{
+		min-height:calc(100vh-144px);
+	}
+
+	
+
+	
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear:both;
+
+	}
+
+
+}
