@@ -374,6 +374,7 @@ template {
   }
 
 #Red-del {
+
 	width: 35%;
 }
 
@@ -415,6 +416,7 @@ template {
 }
 
 .space {
+	margin-bottom: 50px;
 	border-bottom-style: solid;
 	border-bottom-color:#dcdcdc;
 	border-bottom-width: 1.5px;
@@ -429,7 +431,7 @@ template {
 
 .Top-text{
 		text-align: center;
-		margin-bottom: 2px;
+		margin-bottom: 50px;
 		font-size: 1.85rem;
 		font-weight: 500
 }
@@ -564,11 +566,18 @@ footer{
 	max-width: 85%;
 	margin-right: auto;
 	margin-left: auto;
+	font-weight: 300;
 }
+
+.footer-text__anchor{
+		color: #d59541;
+
+	}
 
 @media(min-width: 530px){
 
 .footer-text{
-    	max-width: 100%
+    	max-width: 100%;
+    	font-weight: 300
 }
   }

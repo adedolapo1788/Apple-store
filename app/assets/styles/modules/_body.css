@@ -12,6 +12,7 @@
 }
 
 #Red-del {
+
 	width: 35%;
 
 	@mixin atSmall{
@@ -47,6 +48,7 @@
 }
 
 .space {
+	margin-bottom: 50px;
 	border-bottom-style: solid;
 	border-bottom-color:#dcdcdc;
 	border-bottom-width: 1.5px;
@@ -57,7 +59,7 @@
 	font-size: 1.5rem;
 	@mixin atSmall{
 		text-align: center;
-		margin-bottom: 2px;
+		margin-bottom: 50px;
 		font-size: 1.85rem;
 		font-weight: 500;
 	}

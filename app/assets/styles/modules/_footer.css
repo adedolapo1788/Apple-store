@@ -11,8 +11,16 @@ footer{
 	max-width: 85%;
 	margin-right: auto;
 	margin-left: auto;
+	font-weight: 300;
+
+
+	&__anchor{
+		color: $mainOrange;
+
+	}
     @mixin atSmall{
     	max-width: 100%;
+    	font-weight: 300;
     }
 }
 
