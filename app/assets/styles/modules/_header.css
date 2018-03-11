@@ -3,6 +3,20 @@
 	background:linear-gradient($mainBlue,$mainOrange,$mainBlue);
 	height:600px;
 	margin-bottom: 50px;
+
+	&__menu-icon{
+	     background-color: #fff;
+	     width:25px;
+	     height: 25px;
+	     top:20px;
+	     right: 20px;
+	     position: absolute;
+
+	     @mixin atSmall{
+   	         display: none;
+        }
+	}
+
 	@mixin atSmall{
 		position: relative;
 		height:450px;
@@ -43,10 +57,14 @@
 		}
 	}
 
+
+	&__menu-content{
+		&--is-visible{
+			display: block;
+		}
+	}
+
 }
-
-
-
 
 
 

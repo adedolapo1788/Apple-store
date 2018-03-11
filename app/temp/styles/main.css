@@ -455,6 +455,22 @@ template {
 
 }
 
+.main-header__menu-icon{
+	     background-color: #fff;
+	     width:25px;
+	     height: 25px;
+	     top:20px;
+	     right: 20px;
+	     position: absolute;
+	}
+
+@media(min-width: 530px){
+
+.main-header__menu-icon{
+   	         display: none
+	}
+  }
+
 @media(min-width: 530px){
 
 .main-header{
@@ -503,6 +519,14 @@ template {
 	}
   }
 
+.main-header__menu-content--is-visible{
+			display: block;
+		}
+
+.main-nav{
+    display: none;
+}
+
 @media(min-width: 530px){
 
 .main-nav{
@@ -510,8 +534,12 @@ template {
 	    background-color: rgba(47,85,114,.1);
 	    width: 100%;
 	    top:0;
-	    right:0
+	    right:0;
+	    display: block
 }
+	    .main-nav main-header--dark{
+	    	background-color: rgba(23,51,72,.85);
+	    }
   }
 
 .main-nav__anchor{
@@ -551,6 +579,8 @@ nav ul {
 	border-radius: 3%;
 	text-transform: uppercase;
 	background-color: rgba(213,149,65,.9);
+
+
 }
   }
 

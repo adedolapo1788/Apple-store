@@ -1,10 +1,17 @@
 .main-nav{
+    display: none;
+
 	@mixin atSmall{
 		position: fixed;
 	    background-color:rgba($mainBlue,.1);
 	    width: 100%;
 	    top:0;
 	    right:0;
+	    display: block;
+	    main-header--dark{
+	    	background-color: rgba(23,51,72,.85);
+	    }
+	   
 	}
 
 	&__anchor{
@@ -49,6 +56,11 @@ nav ul {
 	border-radius: 3%;
 	text-transform: uppercase;
 	background-color: rgba($mainOrange,.9);
+
+
 }
 }
+
+
+
 
