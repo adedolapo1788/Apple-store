@@ -2,7 +2,7 @@
 	margin-right: 1rem;
 	margin-left: 0;
 
-	@mixin atSmall{
+	@mixin atMedium{
 		padding-left: 1em;
 	    padding-right: 1em;
 	    width: 89%;
@@ -16,7 +16,7 @@
 	width: 35%;
 	transform: translateX(75%);
 
-	@mixin atSmall{
+	@mixin atMedium{
 		transform: translateX(0);
 		width:200px;
 		float: left;
@@ -35,13 +35,13 @@
 	width: 45%;
 	transform: translateX(57%);
 
-	@mixin atSmall{
+	@mixin atMedium{
 		transform: translateX(0);
 		width: 250px;
 		float: left;
 		margin-top: 5px;
 		margin-right: 100px;
-		margin-bottom: 25px;
+		margin-bottom: 30px;
 		padding: 10px;
 	}
 }
@@ -61,7 +61,7 @@
 .Top-text{
 	text-align: center;
 	font-size: 1.5rem;
-	@mixin atSmall{
+	@mixin atMedium{
 		text-align: center;
 		margin-bottom: 50px;
 		font-size: 1.85rem;
@@ -77,3 +77,5 @@
 .origins{
 	text-align: center;
 }
+
+
