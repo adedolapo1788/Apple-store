@@ -376,11 +376,15 @@ template {
 #Red-del {
 
 	width: 35%;
+	-webkit-transform: translateX(75%);
+	        transform: translateX(75%);
 }
 
 @media(min-width: 530px){
 
 #Red-del {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 		width:200px;
 		float: left;
 		margin-top: 5px;
@@ -394,6 +398,8 @@ template {
 #fujiApple,
 #grannyApple {
 	width: 45%;
+	-webkit-transform: translateX(57%);
+	        transform: translateX(57%);
 }
 
 @media(min-width: 530px){
@@ -401,6 +407,8 @@ template {
 #royal,
 #fujiApple,
 #grannyApple {
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
 		width: 250px;
 		float: left;
 		margin-top: 5px;
@@ -456,7 +464,7 @@ template {
 }
 
 .main-header__menu-icon{
-	     background-color: #fff;
+	    /* background-color: #fff;*/
 	     width:25px;
 	     height: 25px;
 	     top:20px;
@@ -470,6 +478,35 @@ template {
    	         display: none
 	}
   }
+
+.main-header__menu-icon::before{
+        	position: absolute;
+        	content: "";
+        	background-color: #fff;
+        	width: 25px;
+        	top:0;
+        	left: 0;
+        	height: 4px;
+        }
+
+.main-header__menu-icon--middle{
+        	position: absolute;
+	        width: 25px;
+	        height: 4px; 
+	        top: 11px;
+	        left: 0;
+	        background-color: #fff;
+        }
+
+.main-header__menu-icon::after{
+        	position: absolute;
+        	background-color: #fff;
+        	content:"";
+        	width: 25px;
+        	height: 4px;
+        	bottom:0;
+        	left: 0;
+        }
 
 @media(min-width: 530px){
 

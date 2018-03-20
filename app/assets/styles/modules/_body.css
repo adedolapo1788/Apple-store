@@ -14,8 +14,10 @@
 #Red-del {
 
 	width: 35%;
+	transform: translateX(75%);
 
 	@mixin atSmall{
+		transform: translateX(0);
 		width:200px;
 		float: left;
 		margin-top: 5px;
@@ -31,8 +33,10 @@
 #fujiApple,
 #grannyApple {
 	width: 45%;
+	transform: translateX(57%);
 
 	@mixin atSmall{
+		transform: translateX(0);
 		width: 250px;
 		float: left;
 		margin-top: 5px;
