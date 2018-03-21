@@ -470,6 +470,7 @@ template {
 	     top:20px;
 	     right: 20px;
 	     position: absolute;
+	     z-index: 20;
 	}
 
 @media(min-width: 530px){
@@ -487,6 +488,12 @@ template {
         	top:0;
         	left: 0;
         	height: 4px;
+        	-webkit-transform-origin: 0 0;
+        	        transform-origin: 0 0;
+        	-webkit-transition: -webkit-transform .3s ease-out;
+        	transition: -webkit-transform .3s ease-out;
+        	transition: transform .3s ease-out;
+        	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
 .main-header__menu-icon--middle{
@@ -496,6 +503,10 @@ template {
 	        top: 11px;
 	        left: 0;
 	        background-color: #fff;
+	        -webkit-transition: -webkit-transform .3s ease-out;
+	        transition: -webkit-transform .3s ease-out;
+	        transition: transform .3s ease-out;
+	        transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
 .main-header__menu-icon::after{
@@ -506,6 +517,12 @@ template {
         	height: 4px;
         	bottom:0;
         	left: 0;
+        	-webkit-transform-origin: 0 100%;
+        	        transform-origin: 0 100%;
+        	-webkit-transition: -webkit-transform .3s ease-out;
+        	transition: -webkit-transform .3s ease-out;
+        	transition: transform .3s ease-out;
+        	transition: transform .3s ease-out, -webkit-transform .3s ease-out;
         }
 
 @media(min-width: 530px){
@@ -548,7 +565,7 @@ template {
 		font-weight: 200;
 	}
 
-@media(min-width: 530px){
+@media(min-width: 800px){
 
 .main-header__random-text{
 			padding-right: 150px;
@@ -561,7 +578,10 @@ template {
 		}
 
 .main-nav{
-    display: none;
+	height: 0;
+	visibility:hidden;
+	-webkit-transition: visibility .3s ease-out;
+	transition: visibility .3s ease-out;
 }
 
 @media(min-width: 530px){
@@ -572,7 +592,8 @@ template {
 	    width: 100%;
 	    top:0;
 	    right:0;
-	    display: block
+	    display: block;
+	    visibility: visible
 }
 	    .main-nav main-header--dark{
 	    	background-color: rgba(23,51,72,.85);
@@ -620,6 +641,51 @@ nav ul {
 
 }
   }
+
+@media screen and (max-width: 800px){
+	.otherClass{
+	background-color: rgba(47,85,114,0.7);
+	position: absolute;
+	top:0;
+	padding: 20px;
+	padding-top: 55px;
+	width: 100%;
+	z-index: 5;
+	text-align: center;
+	visibility: visible;
+}
+
+
+	.otherClass li{
+	text-transform: uppercase;
+	background-color: #2f5572;
+	padding:10px;
+	margin:4px;
+	border-radius: 2%;
+}
+
+.icon-display::before{
+	-webkit-transform:rotate(45deg) scaleX(1.25);
+	        transform:rotate(45deg) scaleX(1.25);
+
+}
+
+.icon-display::after{
+	-webkit-transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+	        transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+
+.icon-display div{
+	opacity: 0;
+	-webkit-transform: scaleX(0);
+	        transform: scaleX(0);
+	-webkit-transform: rotate(360deg);
+	        transform: rotate(360deg);
+}
+
+
+}
 
 footer{
 	background: #2f5572;

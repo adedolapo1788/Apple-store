@@ -1,6 +1,7 @@
 .main-nav{
-    display: none;
-
+	height: 0;
+	visibility:hidden;
+	transition: visibility .3s ease-out;
 	@mixin atSmall{
 		position: fixed;
 	    background-color:rgba($mainBlue,.1);
@@ -8,6 +9,7 @@
 	    top:0;
 	    right:0;
 	    display: block;
+	    visibility: visible;
 	    main-header--dark{
 	    	background-color: rgba(23,51,72,.85);
 	    }
@@ -64,3 +66,48 @@ nav ul {
 
 
 
+
+
+
+
+
+@media screen and (max-width: 800px){
+	.otherClass{
+	background-color:rgba($mainBlue,0.7);
+	position: absolute;
+	top:0;
+	padding: 20px;
+	padding-top: 55px;
+	width: 100%;
+	z-index: 5;
+	text-align: center;
+	visibility: visible;
+}
+
+
+	.otherClass li{
+	text-transform: uppercase;
+	background-color: $mainBlue;
+	padding:10px;
+	margin:4px;
+	border-radius: 2%;
+}
+
+.icon-display::before{
+	transform:rotate(45deg) scaleX(1.25);
+
+}
+
+.icon-display::after{
+	transform: rotate(-45deg) scaleX(1.25) translateY(1px);
+}
+
+
+.icon-display div{
+	opacity: 0;
+	transform: scaleX(0);
+	transform: rotate(360deg);
+}
+
+
+}
